@@ -16,7 +16,7 @@ from peft import LoraConfig, get_peft_model, prepare_model_for_kbit_training
 from trl import SFTTrainer
 from pathlib import Path
 
-HF_TOKEN = "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"
+
 if HF_TOKEN:
     os.environ["HF_TOKEN"] = HF_TOKEN
 
@@ -176,3 +176,4 @@ finally:
     del trainer
     torch.cuda.empty_cache()
     print("\n✓ Cleanup complete")
+
