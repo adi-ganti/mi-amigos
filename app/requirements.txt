@@ -1,0 +1,8 @@
+# App Dependencies
+streamlit>=1.30.0
+
+# Already installed (from training)
+# torch
+# transformers
+# peft
+# bitsandbytes
