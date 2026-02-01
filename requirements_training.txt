@@ -1,0 +1,20 @@
+# Local Fine-Tuning Requirements
+# Optimized for RTX 4070 (8GB VRAM) + 16GB RAM
+
+# Core libraries (Unsloth-compatible versions)
+torch>=2.1.0
+transformers>=4.36.0
+datasets
+accelerate
+peft
+bitsandbytes
+trl
+xformers
+
+# Unsloth (much faster training - 2x speed)
+unsloth[cu121_torch240] @ git+https://github.com/unslothai/unsloth.git
+
+# Utilities
+psutil
+tqdm
+scipy
